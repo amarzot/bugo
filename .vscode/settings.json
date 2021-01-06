@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "bugo-api/env/bin/python3"
+    "python.pythonPath": "bugo-api/env/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
