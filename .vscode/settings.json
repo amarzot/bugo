@@ -1,5 +1,28 @@
 {
-    "python.pythonPath": "bugo-api/env/bin/python3",
+    "editor.formatOnSave": true,
+    "python.pythonPath": "/home/amarzot/projects/bugo/venv/bin/python3",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_flask_sqlalchemy",
+        // "pylint_flask",
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "bugo-db",
+            "database": "bugo",
+            "username": "postgres",
+            "password": "postgres"
+        }
+    ],
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSaveMode": "file"
+    }
 }
